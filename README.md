@@ -1,18 +1,17 @@
-# Kagi Light Search CSS File
+# Kagi Light Search
 
 Experience the Kagi search with a new light mode theme that is simple, intuitive and designed with smooth animations. Inspired by modern design [The Collaboratory - Refine Search](https://dribbble.com/shots/20838286-The-Collaboratory-Refine-Search).
 
-![Kagi Light Search Placeholder](images/placeholder1.png)
+![Animation Preview](images/animation.gif)
 ---
-![Kagi Light Search Placeholder](images/placeholder2.png)
+![Search Result](images/search-result.png)
 ---
-![Kagi Light Search Placeholder](images/placeholder3.png)
+![Search Result Hover](images/search-result-hover.png)
 ---
-![Kagi Light Search Placeholder](images/placeholder4.png)
+![Startpage](images/startpage.png)
 ---
-![Kagi Light Search Placeholder](images/placeholder5.png)
 
-## Übersicht
+## Overview
 
 **Kagi Light Search** is a custom CSS theme that modernizes the user interface of the Kagi search engine and provides a more pleasant, uncluttered user experience.
 
