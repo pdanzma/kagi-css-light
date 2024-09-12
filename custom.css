@@ -1,0 +1,124 @@
+.__sri-title .__sri_title_link:visited {
+    color: var(--search-result-title); /* wenn man die Seite schon besucht hat - Titelfarbe */
+  }
+  
+  .widget-simple .__domain-name {
+    background-color: #F0F2F6;
+    transition: all 0.5s ease;
+  }
+  
+  .widget-simple .widgetItem:hover .__domain-name {
+    background-color: #E1E4EA;
+  }
+  
+  .widget-simple .widgetItem {
+    transition: all 0.5s ease;
+  }
+  
+  .widget-simple .widgetItem:hover {
+    background-color: #F0F2F6;
+    padding: 10px;
+  }
+  
+  .widget-simple .widgetItemTitle .__title-text:hover {
+    color:var(--search-result-title);
+    text-decoration: none !important;
+  }
+  
+  .wikipediaResult {
+    background-color: #F9F9FB;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .wikipediaResult .wiki-title a,
+  .wikipediaResult .wiki-title a:visited {
+    border-bottom: none !important;
+    color:var(--search-result-title)
+  }
+  .wikipediaResult .wiki-title a:hover {
+    border-bottom: none !important;
+    color:var(--search-result-title);
+  }
+  
+  .sri-group .sr-group {
+    padding-left: 0px !important;
+  }
+  
+  .__sri-time {
+    background-color: #F0F2F6;
+    transition: all 0.5s ease;
+  }
+  
+  .search-result:hover .__sri-time {
+    background-color: #E1E4EA;
+  }
+  
+  .__sri-time.--new {
+    background-color: #F0F2F6;
+    transition: all 0.5s ease;
+  }
+  
+  .search-result:hover .__sri-time.--new {
+    background-color: #E1E4EA;
+  }
+  
+  .__sri-url {
+    background-color: #F0F2F6;
+    border-radius: 12px;
+    padding: 6px;
+    transition: all 0.5s ease;
+  }
+  
+  .search-result:hover .__sri-url {
+    background-color: #E1E4EA;
+  }
+  
+  .search-result {
+    transition: all 0.5s ease;
+  }
+  
+  .search-result:hover {
+    background-color: #F9F9FB;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  .__srgi {
+    transition: all 0.5s ease;
+  }
+  
+  .__srgi:hover {
+    background-color: #F9F9FB;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  /* Remove bottom border from links - kopiert von Wiki */
+  .__sri_title_link._0_sri_title_link._0_URL {
+    border-bottom: none;
+  }
+  
+  /* Remove underline with nested links - kopiert von Wiki */
+  .__srgi-title a {
+    border-bottom: none; var(--result-item-title-border);
+  }
+  
+  /* Remove underline with News module - kopiert von Wiki */
+  .newsResultItem .newsResultHeader .newsResultTitle a._0_TITLE {
+    border-bottom: none; var(--result-item-title-border);
+  }
+  
+  /* Remove underline from links in Wikipedia module - kopiert von Wiki */
+  .wikipediaResult a {
+    border-bottom: none; var(--result-item-title-border);
+  }
+  
+  .__sri-title .__sri_title_link:hover {
+    color: var(--search-result-title) !important;
+  }
+  
+  .__srgi-title a:hover {
+    border-bottom: none;
+    color: var(--search-result-title) !important;
+  }
