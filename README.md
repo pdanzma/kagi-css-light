@@ -10,6 +10,10 @@ Experience the Kagi search with a new light mode theme that is simple, intuitive
 ---
 ![Startpage](images/startpage.png)
 ---
+![Mobile View](images/mobile-view.png)
+---
+![Mobile View](images/mobile-view-2.png)
+---
 
 ## Overview
 
