@@ -1,124 +1,264 @@
+:root {
+  --button-hover-color: #e7e7e7;
+}
+
 .__sri-title .__sri_title_link:visited {
-    color: var(--search-result-title); /* wenn man die Seite schon besucht hat - Titelfarbe */
-  }
-  
-  .widget-simple .__domain-name {
-    background-color: #F0F2F6;
-    transition: all 0.5s ease;
-  }
-  
-  .widget-simple .widgetItem:hover .__domain-name {
-    background-color: #E1E4EA;
-  }
-  
-  .widget-simple .widgetItem {
-    transition: all 0.5s ease;
-  }
-  
-  .widget-simple .widgetItem:hover {
-    background-color: #F0F2F6;
-    padding: 10px;
-  }
-  
-  .widget-simple .widgetItemTitle .__title-text:hover {
-    color:var(--search-result-title);
-    text-decoration: none !important;
-  }
-  
-  .wikipediaResult {
-    background-color: #F9F9FB;
-    border-radius: 10px;
-    padding: 10px;
-  }
-  
-  .wikipediaResult .wiki-title a,
-  .wikipediaResult .wiki-title a:visited {
-    border-bottom: none !important;
-    color:var(--search-result-title)
-  }
-  .wikipediaResult .wiki-title a:hover {
-    border-bottom: none !important;
-    color:var(--search-result-title);
-  }
-  
-  .sri-group .sr-group {
-    padding-left: 0px !important;
-  }
-  
-  .__sri-time {
-    background-color: #F0F2F6;
-    transition: all 0.5s ease;
-  }
-  
-  .search-result:hover .__sri-time {
-    background-color: #E1E4EA;
-  }
-  
-  .__sri-time.--new {
-    background-color: #F0F2F6;
-    transition: all 0.5s ease;
-  }
-  
-  .search-result:hover .__sri-time.--new {
-    background-color: #E1E4EA;
-  }
-  
-  .__sri-url {
-    background-color: #F0F2F6;
-    border-radius: 12px;
-    padding: 6px;
-    transition: all 0.5s ease;
-  }
-  
-  .search-result:hover .__sri-url {
-    background-color: #E1E4EA;
-  }
-  
-  .search-result {
-    transition: all 0.5s ease;
-  }
-  
-  .search-result:hover {
-    background-color: #F9F9FB;
+  color: var(--search-result-title);
+}
+
+.serp-nav .nav_item {
+    position: relative
+}
+
+.serp-nav .nav_item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--nav_n_se_line);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform .3s ease, box-shadow .3s ease;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px
+}
+
+._0_sri-w-highlight .serp-nav .nav_item.searchResultAnswer:after,
+.serp-nav ._0_sri-w-highlight .nav_item.searchResultAnswer:after,
+.serp-nav .nav_item.--active:after,
+.serp-nav .nav_item:hover:after {
+    transform: scaleY(1)
+}
+
+._0_results_summary_link_to_IA {
+    background-color: var(--inline-domain-tag-bg);
+    max-width: max-content;
     padding: 5px;
     border-radius: 10px;
-  }
-  
-  .__srgi {
-    transition: all 0.5s ease;
-  }
-  
-  .__srgi:hover {
-    background-color: #F9F9FB;
-    padding: 5px;
-    border-radius: 10px;
-  }
-  
-  /* Remove bottom border from links - kopiert von Wiki */
-  .__sri_title_link._0_sri_title_link._0_URL {
-    border-bottom: none;
-  }
-  
-  /* Remove underline with nested links - kopiert von Wiki */
-  .__srgi-title a {
-    border-bottom: none; var(--result-item-title-border);
-  }
-  
-  /* Remove underline with News module - kopiert von Wiki */
-  .newsResultItem .newsResultHeader .newsResultTitle a._0_TITLE {
-    border-bottom: none; var(--result-item-title-border);
-  }
-  
-  /* Remove underline from links in Wikipedia module - kopiert von Wiki */
-  .wikipediaResult a {
-    border-bottom: none; var(--result-item-title-border);
-  }
-  
-  .__sri-title .__sri_title_link:hover {
-    color: var(--search-result-title) !important;
-  }
-  
-  .__srgi-title a:hover {
-    border-bottom: none;
-    color: var(--search-result-title) !important;
-  }
+    margin-top: 15px;
+    transition: all .5s ease;
+    user-select: none
+}
+
+._0_results_summary_link_to_IA:hover,
+._0_summarize_link:hover {
+    background-color: var(--button-hover-color);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .2)
+}
+
+.results_summary_text_box sup a {
+    border-radius: 50%;
+    background-color: #e7e7e7;
+    color: #1e2028;
+    padding: 1px 4px;
+    transition: background-color .3s ease, color .3s ease
+}
+
+.results_summary_text_box sup a:hover {
+    background-color: var(--source-highlight-color);
+    color: #f2fcfc;
+    transition: all .5s ease
+}
+
+._0_results_summary_links {
+    margin-bottom: 30px
+}
+
+._0_results_summary_links a {
+    transition: color .3s ease-in-out, transform .3s ease-in-out;
+    border-radius: 3px;
+    display: inline-block;
+    text-decoration: none
+}
+
+._0_results_summary_links a.__0_highlight,
+._0_results_summary_links a:hover {
+    transform: translateX(3px);
+    background-color: #e7e7e7;
+    color: #1e2028
+}
+
+._0_results_summary_links .__domain-name {
+    user-select: none
+}
+
+.widget-simple .__domain-name {
+  background-color: #F0F2F6;
+  transition: all 0.5s ease;
+}
+
+.widget-simple .widgetItem:hover .__domain-name {
+  background-color: #E1E4EA;
+}
+
+.widget-simple .widgetItem {
+  transition: all 0.5s ease;
+}
+
+.widget-simple .widgetItem:hover {
+  background-color: #F0F2F6;
+  padding: 10px;
+}
+
+.widget-simple .widgetItemTitle .__title-text:hover {
+  color: var(--search-result-title);
+  text-decoration: none !important;
+}
+
+.wikipediaResult {
+  background-color: #F9F9FB;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.wikipediaResult .wiki-title a,
+.wikipediaResult .wiki-title a:visited {
+  border-bottom: none !important;
+  color: var(--search-result-title)
+}
+
+.wikipediaResult .wiki-title a:hover {
+  border-bottom: none !important;
+  color: var(--search-result-title);
+}
+
+.__sri-time {
+  background-color: #F0F2F6;
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+
+.search-result:hover .__sri-time {
+  background-color: #E1E4EA;
+}
+
+.__sri-time.--new {
+  background-color: #F0F2F6;
+  transition: all 0.5s ease;
+}
+
+.search-result:hover .__sri-time.--new {
+  background-color: #E1E4EA;
+}
+
+.__sri-url {
+  background-color: #F0F2F6;
+  border-radius: 12px;
+  padding: 6px;
+  transition: all 0.5s ease;
+}
+
+.search-result:hover .__sri-url {
+  background-color: #E1E4EA;
+}
+
+.search-result {
+  transition: all 0.5s ease;
+}
+
+.search-result:hover {
+  background-color: #F9F9FB;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.__srgi {
+  transition: all 0.5s ease;
+}
+
+.__srgi:hover {
+  background-color: #F9F9FB;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/* Remove bottom border from links - kopiert von Wiki */
+.__sri_title_link._0_sri_title_link._0_URL {
+  border-bottom: none;
+}
+
+/* Remove underline with nested links - kopiert von Wiki */
+.__srgi-title a {
+  border-bottom: none;
+  var(--result-item-title-border);
+}
+
+/* Remove underline with News module - kopiert von Wiki */
+.newsResultItem .newsResultHeader .newsResultTitle a._0_TITLE {
+  border-bottom: none;
+  var(--result-item-title-border);
+}
+
+/* Remove underline from links in Wikipedia module - kopiert von Wiki */
+.wikipediaResult a {
+  border-bottom: none;
+  var(--result-item-title-border);
+}
+
+.__sri-title .__sri_title_link:hover {
+  color: var(--search-result-title) !important;
+}
+
+.__srgi-title a:hover {
+  border-bottom: none;
+  color: var(--search-result-title) !important;
+}
+
+.image-preview-wrapper {
+  background-color: rgba(248, 248, 248, 0.90);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  padding: 8px;
+  color: inherit;
+  transition: background-color 200ms ease, box-shadow 200ms ease, transform 160ms ease;
+}
+
+.image-preview-wrapper .image-preview-body {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-preview-wrapper .image-preview-footer {
+  background-color: #fafafa;
+}
+
+.image-preview-wrapper .image-preview-footer .image-preview-info-header #PreviewImageTitle {
+  color: #1e2028;
+}
+
+.image-preview-wrapper .image-preview-footer .image-preview-info-header {
+  background-color: #e7e7e7;
+  border-radius: 12px;
+}
+
+.image-preview-wrapper .image-preview-footer .image-preview-info-body {
+  background-color: #e7e7e7;
+}
+
+.image-preview-wrapper .image-preview-footer .image-preview-info-body .ranked-icon {
+  background-color: #aaaab1;
+}
+
+.image-preview-wrapper .image-preview-footer .image-preview-info-body .ranked-icon>._0_rank-icons>svg, .image-preview-wrapper .image-preview-footer .image-preview-info-body .ranked-icon>._0_reverse-icons>svg {
+  color: #1e2028;
+}
+
+.image-preview-wrapper .image-preview-footer .image-preview-info-body .image-preview-info-item .image-preview-info-item__data {
+  color: #1e2028;
+}
+
+.image-preview-wrapper .image-preview-footer .image-preview-info-body .image-preview-info-item .image-preview-info-item__title {
+  color: #1e2028;
+}
